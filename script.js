@@ -11,6 +11,9 @@ const bgSound = new Audio('bg.mp3')
 // Game Functions
 function main(ctime) { //ctime - current time
     window.requestAnimationFrame(main); // by this way we create a gameloop, and the function will be called repeatedly.
+    
+    console.log(ctime)
+
 }
 
 
