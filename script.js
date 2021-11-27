@@ -5,3 +5,4 @@ let foodSound = new Audio('food.mp3')
 let gameOverSound = new Audio('gameOver.mp3')
 let moveSound = new Audio('move.mp3')
 let bgSound = new Audio('bg.mp3')
+
