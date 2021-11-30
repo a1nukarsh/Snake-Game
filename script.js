@@ -23,7 +23,7 @@ function main(ctime) { //ctime - current time
 
 function gameEngine(){
     // Part 1: Updating the snake array
-    // Part 2: 
+    // Part 2: Render the snake and it's food
 }
 
 
