@@ -19,8 +19,8 @@
     width: 50%;
     height: 50vw;
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(33, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
 }
 
 .s-head{
