@@ -24,10 +24,17 @@
 }
 
 .s-head{
-    background-color: white;
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.s-body{
+    background-color: red;
     border: 2px solid black;
+    border-radius: 50%;
 }
 .food{
-    background-color: black;
+    background-color: blue;
     border: 2px solid white;
+    border-radius: 50%;
 }

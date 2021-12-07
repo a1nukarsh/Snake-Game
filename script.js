@@ -10,6 +10,7 @@ const bgSound = new Audio("bg.mp3");
 let speed = 2;
 let lastPaintTime = 0;
 let snakeArr = [{ x: 13, y: 15 }];
+food = {x:18, y:13}
 
 // Game Functions
 function main(ctime) {
@@ -27,15 +28,33 @@ function gameEngine() {
   // Part 1: Updating the snake array & food
 
   // Part 2: Display the snake and it's food
+  //   Display the snake
   board.innerHTML = " ";
   snakeArr.forEach((e, index) => {
     snakeElement = document.createElement("div");
     snakeElement.style.gridRowStart = e.y;
     snakeElement.style.gridColumnStart = e.x;
-    snakeElement.classList.add('food')
-    board.appendChild(snakeElement)
+    snakeElement.classList.add("s-body");
+    if(index === 0){
+        snakeElement.classList.add("s-head");
+    }
+    else{
+        snakeElement.classList.add("s-body");
+    }
+    board.appendChild(snakeElement);
   });
+  //   Display the food
+  foodElement = document.createElement("div");
+  foodElement.style.gridRowStart = food.y;
+  foodElement.style.gridColumnStart = food.x;
+  foodElement.classList.add("food");
+  board.appendChild(foodElement);
+
 }
 
 // Main logic starts here
 window.requestAnimationFrame(main);
+
+window.addEventListener('keydown', e=>{
+    
+})
