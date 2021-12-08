@@ -53,10 +53,11 @@ function gameEngine() {
 
   // Moving the snake
   for (let i = snakeArr.length; i >= 0 ; i++) {
-    const element = array[i];
-    snakeArr[i+1] = snakeArr[i]
-    
+    const element = snakeArr[i];
+    snakeArr[i+1] = {...snakeArr[i]}//destructuring
   }
+  snakeArr[0].x += inputDir.x
+  snakeArr[0].y += inputDir.y
 
   // Part 2: Display the snake and it's food
   //   Display the snake
