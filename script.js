@@ -46,6 +46,16 @@ function gameEngine() {
       x: snakeArr[0].x + inputDir.x,
       y: snakeArr[0].y + inputDir.y,
     });
+    let a = 2
+    let b = 19
+    food = { x: Math.round(a + (b - a) * Math.random()), y: Math.round(a + (b - a) * Math.random()) };
+  }
+
+  // Moving the snake
+  for (let i = snakeArr.length; i >= 0 ; i++) {
+    const element = array[i];
+    snakeArr[i+1] = snakeArr[i]
+    
   }
 
   // Part 2: Display the snake and it's food
