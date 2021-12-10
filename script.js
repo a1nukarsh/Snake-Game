@@ -72,7 +72,7 @@ function gameEngine() {
     } else {
       snakeElement.classList.add("s-body");
     }
-    // board.appendChild(snakeElement);
+    board.appendChild(snakeElement);
   });
   //   Display the food
   foodElement = document.createElement("div");
